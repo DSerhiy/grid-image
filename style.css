@@ -1,0 +1,48 @@
+/* GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+/* GRID STYLES */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem; 
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.column > .row:last-child {
+  margin-bottom: 0;
+}
+
+.column {
+  flex-grow: 1; 
+  padding: 0 0.5rem; 
+  /* border: 1px solid black; */
+}
+
+.column.grid {
+  padding: 0;
+} 
+
+.column--1 {width: calc(100% / 6)}
+.column--2 {width: calc(100% / 3)}
+.column--3 {width: calc(100% / 2)}
+.column--4 {width: calc(100% / 6 * 4)}
+.column--5 {width: calc(100% / 6 * 5)}
+.column--6 {width: 100%}
